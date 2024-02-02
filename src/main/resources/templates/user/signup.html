@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Screen</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="login-container">
+  <form class="login-form" th:object="${member}" method="post">
+    <div th:if="${#fields.hasGlobalErrors()}">
+      <p class="field-error" th:each="err : ${#fields.globalErrors()}"
+         th:text="${err}">전체 오류 메시지</p>
+    </div>
+    <h2>Login</h2>
+    <div class="input-group">
+      <label for="loginId">ID</label>
+      <input type="text" id="loginId" name="user-id" th:field="*{loginId}" required>
+    </div>
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="user-password"  th:field="*{password}" required>
+    </div>
+    <button type="submit">Login</button>
+  </form>
+</div>
+</body>
+</html>

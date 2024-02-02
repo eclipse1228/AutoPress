@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Screen</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="login-container">
+    <form class="login-form">
+        <h2>Login</h2>
+        <div class="input-group">
+            <label for="user-id">ID</label>
+            <input type="text" id="user-id" name="user-id" required>
+        </div>
+        <div class="input-group">
+            <label for="user-password">Password</label>
+            <input type="password" id="user-password" name="user-password" required>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</div>
+</body>
+</html>

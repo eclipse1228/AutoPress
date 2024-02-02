@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoBlog - Automatic WordPress Posting Service</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="header-content">
+    <h1>AutoBlog</h1>
+    <button id="login-btn" th:onclick="|location.href='@{/add}'|">Signup</button>
+  </div>
+</header>
+<section id="service-introduction">
+  <img src="service-image.jpg" alt="Service Introduction Image" />
+  <p>This is a WordPress blog automatic posting service.</p>
+</section>
+<section id="rate-plans">
+  <h2>Introduction to Rate Plans</h2>
+  <div class="plan">
+    <h3>Basic Plan</h3>
+    <p>$9.99/month</p>
+  </div>
+  <div class="plan">
+    <h3>Standard Plan</h3>
+    <p>$19.99/month</p>
+  </div>
+  <div class="plan">
+    <h3>Premium Plan</h3>
+    <p>$29.99/month</p>
+  </div>
+</section>
+<section id="developer-contact">
+  <h2>Contact Developer</h2>
+  <p>Name: Byeongsu Go</p>
+  <p>Email: <a href="mailto:qudtnrh@gmail.com">qudtnrh@gmail.com</a></p>
+</section>
+<footer>
+  <p>&copy; 2024 AutoBlog. All rights reserved.</p>
+</footer>
+</body>
+</html>
