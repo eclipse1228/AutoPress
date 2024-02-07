@@ -1,4 +1,4 @@
-package go.example.personalproject.user;
+package go.example.personalproject.domain.user;
 
 import jakarta.validation.constraints.NotEmpty;
 import lombok.Data;

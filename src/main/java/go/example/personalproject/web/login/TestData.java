@@ -1,7 +1,7 @@
-package go.example.personalproject.login;
+package go.example.personalproject.web.login;
 
-import go.example.personalproject.user.User;
-import go.example.personalproject.user.UserRepository;
+import go.example.personalproject.domain.user.User;
+import go.example.personalproject.domain.user.UserRepository;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;

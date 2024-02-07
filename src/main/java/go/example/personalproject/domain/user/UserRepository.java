@@ -1,5 +1,6 @@
-package go.example.personalproject.user;
+package go.example.personalproject.domain.user;
 
+import go.example.personalproject.domain.user.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Repository;
 

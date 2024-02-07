@@ -8,15 +8,15 @@
 </head>
 <body>
 <div class="login-container">
-    <form class="login-form">
+    <form class="login-form" th:action th:object="${loginForm}" method="post" >
         <h2>Login</h2>
         <div class="input-group">
-            <label for="user-id">ID</label>
-            <input type="text" id="user-id" name="user-id" required>
+            <label for="loginId">ID</label>
+            <input type="text" id="loginId" name="user-id" th:field="*{loginId}" required>
         </div>
         <div class="input-group">
-            <label for="user-password">Password</label>
-            <input type="password" id="user-password" name="user-password" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="user-password" th:field="*{password}" required>
         </div>
         <button type="submit">Login</button>
     </form>

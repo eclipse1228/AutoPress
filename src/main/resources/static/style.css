@@ -27,7 +27,27 @@ header {
     border: none;
     cursor: pointer;
 }
+#signup-btn {
+    position: absolute;
+    right: 83px;
+    top: 20px;
+    padding: 10px;
+    background-color: #0069D9;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#logout-btn {
 
+    position: absolute;
+    right: 143px;
+    top: 20px;
+    padding: 10px;
+    background-color: #0069D9;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 #service-introduction {
     display: flex;
     align-items: center;

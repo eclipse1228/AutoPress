@@ -9,10 +9,15 @@
 <body>
 <header>
   <div class="header-content">
-    <h1>AutoBlog home</h1>
-<!--    <p th:text="|Welcome! ${user.name}|"></p>-->
-    <button id="signup-btn" th:onclick="|location.href='@{/add}'|">Signup</button>
-    <button id="login-btn" th:onclick="|location.href='@{/login}'|">Login</button>
+    <h1>AutoBlog</h1>
+        <p th:text="|Welcome! ${user.name}|"></p>
+    <span th:if="${user.name == null}">
+      <button id="signup-btn" th:onclick="|location.href='@{/add}'|">Signup</button>
+      <button id="login-btn" th:onclick="|location.href='@{/login}'|">Login</button>
+    </span>
+    <form th:action="${/logout}" method="post">
+      <button id="logout-btn" th:onclick="|location.href='@{/logout}'|" type="submit">Logout</button>
+    </form>
   </div>
 
 </header>
