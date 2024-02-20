@@ -1,2 +1,2 @@
 # AutoPress
-Chat gpt AutoWirte System for WordPress 
+Chat gpt AutoWrite System for WordPress 
